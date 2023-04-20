@@ -1,5 +1,5 @@
 const express = require("express")
-const port = 5000;
+const PORT = 5050;
 const app = express();
 
 app.get("/", (req, res) => {
@@ -7,6 +7,6 @@ app.get("/", (req, res) => {
 });
 
 
-app.listen(port, ()=>{
+app.listen(Port || 5000, ()=>{
     console.log(`Server is running at http://localhost:${port}`);
 })
